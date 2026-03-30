@@ -1,0 +1,162 @@
+<!-- REMARQUE : le style CSS reste IDENTIQUE à ton fichier Atelier 2 -->
+
+<!-- HERO -->
+<div style="background: var(--navy);">
+  <div class="hero" id="top">
+    <div class="hero-tag">Atelier 4 – PARCINFO / GLPI</div>
+    <h1>Gestion du <span>parc informatique</span><br>et haute disponibilité avec GLPI</h1>
+    <p>Mise en place d’une solution complète de gestion de parc informatique avec GLPI : inventaire automatique, gestion des incidents, sauvegarde des données et haute disponibilité via HAProxy.</p>
+    <div class="hero-meta">
+      <span>📍 <strong>Site :</strong> Chasseneuil</span>
+      <span>🗓️ <strong>Période :</strong> Mars 2026</span>
+      <span>🎓 <strong>Formation :</strong> BTS SIO SISR – CNED</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+
+<!-- CONTEXTE -->
+<section id="contexte">
+  <div class="section-label">01 — Contexte</div>
+  <h2>Présentation de l'activité</h2>
+
+  <p>L’atelier 4 a pour objectif de mettre en place une solution de gestion de parc informatique pour l’entreprise TiersLieux. Cette solution repose sur l’outil GLPI permettant de gérer les équipements, les utilisateurs et les incidents.</p>
+
+  <p>L’infrastructure mise en place repose sur plusieurs serveurs permettant de séparer les rôles (application, base de données, répartition de charge) et d’assurer une haute disponibilité du service.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">🖥️</div>
+      <h3>GLPI</h3>
+      <p>Version 10.0.17 — gestion de parc et tickets</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🗄️</div>
+      <h3>Base de données</h3>
+      <p>MariaDB — stockage des informations GLPI</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌐</div>
+      <h3>HAProxy</h3>
+      <p>Répartition de charge et haute disponibilité</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💻</div>
+      <h3>Poste client</h3>
+      <p>Windows 11 avec GLPI Agent</p>
+    </div>
+  </div>
+</section>
+
+<!-- MISSIONS -->
+<section id="missions">
+  <div class="section-label">02 — Missions</div>
+  <h2>Travail réalisé</h2>
+
+  <div class="missions">
+
+    <div class="mission">
+      <span class="mission-num">M1</span>
+      <div>
+        <h3>Inventaire du parc informatique</h3>
+        <p>Mise en place de GLPI et remontée des informations du poste Win11-Client via GLPI Agent (nom, OS, utilisateur).</p>
+      </div>
+    </div>
+
+    <div class="mission">
+      <span class="mission-num">M2</span>
+      <div>
+        <h3>Gestion des incidents</h3>
+        <p>Création d’un ticket dans GLPI permettant de tester le système de gestion des incidents.</p>
+      </div>
+    </div>
+
+    <div class="mission">
+      <span class="mission-num">M3</span>
+      <div>
+        <h3>Déploiement de l’agent GLPI</h3>
+        <p>Installation et vérification du service glpi-agent sur Windows avec remontée automatique des informations.</p>
+      </div>
+    </div>
+
+    <div class="mission">
+      <span class="mission-num">M4</span>
+      <div>
+        <h3>Sauvegarde de la base de données</h3>
+        <p>Création d’une sauvegarde via mysqldump pour garantir la continuité de service.</p>
+      </div>
+    </div>
+
+    <div class="mission">
+      <span class="mission-num">M5</span>
+      <div>
+        <h3>Haute disponibilité avec HAProxy</h3>
+        <p>Configuration de HAProxy avec deux serveurs GLPI et test de panne validant la continuité du service.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents">
+  <div class="section-label">03 — Documents</div>
+  <h2>Accès aux ressources</h2>
+
+  <ul class="links-list">
+
+    <li>
+      <a href="Atelier4_CompteRendu_Complet.pdf" target="_blank">
+        <span class="link-icon">📄</span>
+        <span>
+          <div>Compte rendu d'activité – Atelier 4</div>
+          <div class="link-desc">PDF complet avec captures et explications</div>
+        </span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/USER75MA/Atelier4" target="_blank">
+        <span class="link-icon">💾</span>
+        <span>
+          <div>Dépôt GitHub</div>
+          <div class="link-desc">Configuration HAProxy, GLPI, documentation</div>
+        </span>
+      </a>
+    </li>
+
+  </ul>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="competences">
+  <div class="section-label">04 — Compétences</div>
+  <h2>Compétences couvertes</h2>
+
+  <div class="competences">
+    <div class="comp"><span class="comp-code">B1</span><span class="comp-label">Support utilisateur</span><span class="comp-detail">GLPI, tickets</span></div>
+    <div class="comp"><span class="comp-code">B2</span><span class="comp-label">Administration système</span><span class="comp-detail">Linux, services, MariaDB</span></div>
+    <div class="comp"><span class="comp-code">B3</span><span class="comp-label">Réseau</span><span class="comp-detail">HAProxy, routage</span></div>
+  </div>
+</section>
+
+<!-- DÉMO -->
+<section id="demo">
+  <div class="section-label">05 — Démonstration</div>
+  <h2>Vidéo de démonstration</h2>
+
+  <p>La démonstration présente l’accès à GLPI, la création d’un ticket, l’inventaire et le test de haute disponibilité.</p>
+
+  <div class="video-placeholder">
+    <div class="play">▶</div>
+    <span>Ajoute ton lien YouTube ici</span>
+  </div>
+
+</section>
+
+</div>
+
+<footer>
+  <p>BTS SIO SISR – Atelier 4 PARCINFO – Mars 2026</p>
+</footer>
